@@ -27,7 +27,7 @@ export interface HeadroomProps {
   pinStart?: number;
   style?: CSS.Properties;
   calcHeightOnResize?: boolean;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: keyof HTMLElementTagNameMap;
 }
 
 interface HeadroomState {
@@ -264,7 +264,7 @@ export const Headroom = component$((props: HeadroomProps) => {
     };
   });
 
-  const Tag: keyof JSX.IntrinsicElements = props.tag || "div";
+  const Tag: keyof HTMLElementTagNameMap = props.tag || "div";
 
   let innerStyle: CSS.Properties = {
     position: props.disable || state.state === "unfixed" ? "relative" : "fixed",
