@@ -23,7 +23,8 @@ export default component$(() => {
           <p className="my-8 text-lg">
             I am a passionate Software Engineer, specialised in front-end
             development using React and TypeScript. My main motivation is to
-            build software that eases peoples lives. You can talk to me about .
+            build software that eases people&apos;s lives. You can talk to me
+            about .
           </p>
           <p>
             P.S. this website is open-source and available on{" "}
