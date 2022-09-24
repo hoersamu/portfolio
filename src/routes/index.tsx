@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { SeoHead } from "~/util/seoHead";
 
 export default component$(() => {
   return (
@@ -87,6 +88,21 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: "Welcome to Qwik",
-};
+export const head: DocumentHead = SeoHead({
+  title: "Samuel Höra - Software Developer",
+  description:
+    "A Front-End Software Engineer with a focus on TypeScript and React",
+  keywords: [
+    "Software Engineer",
+    "Samuel Höra",
+    "Heidenhain",
+    "Front-End",
+    "Full-Stack",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "NextJs",
+    "CSS",
+    "Tailwind",
+  ],
+});

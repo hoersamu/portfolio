@@ -7,10 +7,8 @@ export default component$(() => {
     <>
       <SkipToContent />
       <Header />
-      <main>
-        <section>
-          <Slot />
-        </section>
+      <main id="content">
+        <Slot />
       </main>
       <footer></footer>
     </>
