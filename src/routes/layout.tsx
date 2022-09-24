@@ -1,4 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
+import { Footer } from "~/components/footer/footer";
 import { Header } from "~/components/header";
 import { SkipToContent } from "~/components/skipToContent";
 
@@ -10,7 +11,7 @@ export default component$(() => {
       <main id="content">
         <Slot />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 });

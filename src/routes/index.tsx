@@ -4,6 +4,7 @@ import { Container } from "~/components/container";
 import {
   DockerLogo,
   NextLogo,
+  QwikLogo,
   ReactLogo,
   TypescriptLogo,
   VercelLogo,
@@ -51,6 +52,7 @@ export default component$(() => {
               <VsCodeLogo className="w-12" ariaLabel="Visual Studio Code" />
               <DockerLogo className="w-16" ariaLabel="Docker" />
               <TypescriptLogo className="w-16" ariaLabel="TypeScript" />
+              <QwikLogo className="w-32" ariaLabel="Qwik" />
             </div>
           </Container>
         </section>

@@ -1,4 +1,4 @@
 export interface IconProps {
-  className: string;
-  ariaLabel: string;
+  className?: string;
+  ariaLabel?: string;
 }
