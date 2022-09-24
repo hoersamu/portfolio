@@ -29,21 +29,28 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
-    "qwik": "qwik",
     "prepare": "husky install",
     "prettier": "prettier --check \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css)\"",
-    "prettier:write": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css)\""
+    "prettier:write": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css)\"",
+    "qwik": "qwik"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "@builder.io/qwik": "0.9.0",
     "@builder.io/qwik-city": "0.0.111",
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
+    "@builder.io/qwik-react": "0.0.102",
+    "@emotion/react": "11.9.3",
+    "@emotion/server": "11.4.0",
+    "@emotion/styled": "11.9.3",
     "@types/eslint": "8.4.6",
     "@types/node": "latest",
+    "@types/raf": "^3.4.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
     "autoprefixer": "^10.4.12",
+    "csstype": "^3.1.1",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-node": "0.3.6",
@@ -59,6 +66,8 @@
     "node-fetch": "3.2.10",
     "postcss": "^8.4.16",
     "prettier": "2.7.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tailwindcss": "3.1.8",
     "typescript": "4.8.3",
     "vite": "3.1.1",
@@ -72,5 +81,10 @@
     "*.{json,md}": [
       "pnpm run prettier:fix"
     ]
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^7.3.6",
+    "raf": "^3.4.1"
   }
 }
