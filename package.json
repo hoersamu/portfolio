@@ -17,7 +17,7 @@
     "url": "https://github.com/hoersamu/portfolio"
   },
   "scripts": {
-    "build": "qwik build",
+    "build": "pnpm build.types && pnpm run build.client && pnpm run build.ssg",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.types": "tsc --incremental --noEmit",
