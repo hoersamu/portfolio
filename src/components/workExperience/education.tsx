@@ -4,7 +4,7 @@ import { Job } from "./job";
 export const Education = component$(() => {
   return (
     <>
-      <h2 className="headline mt-12 mb-4 text-4xl">Education</h2>
+      <h2 className="headline mt-12 mb-4 text-4xl leading-tight">Education</h2>
       <div>
         <Job
           company={{

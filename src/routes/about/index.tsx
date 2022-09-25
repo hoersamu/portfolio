@@ -1,7 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Container } from "~/components/container";
-import { Education, WorkExperience } from "~/components/workExperience";
+import {
+  Education,
+  Languages,
+  WorkExperience,
+} from "~/components/workExperience";
 import { defaultSeoKeywords, SeoHead } from "~/util/seoHead";
 
 export default component$(() => {
@@ -34,6 +38,7 @@ export default component$(() => {
         </p>
         <WorkExperience />
         <Education />
+        <Languages />
       </Container>
     </>
   );

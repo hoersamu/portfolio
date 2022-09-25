@@ -10,7 +10,7 @@ export const WorkExperience = component$(() => {
 
   return (
     <>
-      <h2 className="headline mt-12 mb-4 text-4xl">Experience</h2>
+      <h2 className="headline mt-12 mb-4 text-4xl leading-tight">Experience</h2>
       <div>
         <Job
           company={{

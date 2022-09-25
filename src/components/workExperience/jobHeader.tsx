@@ -18,7 +18,7 @@ export const JobHeader = component$(
             <div className="flex flex-col-reverse md:flex-row justify-between">
               <h3 className="font-bold">{jobTitle}</h3>
               <span className="text-sm md:text-base">
-                {`${fromDate} — ${toDate ? toDate : "present"}`}
+                {fromDate && `${fromDate} — ${toDate ? toDate : "present"}`}
               </span>
             </div>
             <h4>
