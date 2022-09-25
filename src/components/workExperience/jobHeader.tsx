@@ -1,6 +1,9 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, mutable, useContext } from "@builder.io/qwik";
+import classNames from "classnames";
+import { Chip } from "../chip";
 import { LinkWrapper } from "../linkWrapper";
 import { JobProps } from "./job";
+import { activeTechnologyCtx } from "./workExperience";
 
 export const JobHeader = component$(
   ({ company, jobTitle, fromDate, technologies, toDate }: JobProps) => {
@@ -35,20 +38,53 @@ export const JobHeader = component$(
               )}
             </h4>
             {technologies && (
-              <p className="hidden md:block text-sm">
-                <strong>Technologies: </strong>
-                {technologies.join(", ")}
-              </p>
+              <Technologies
+                technologies={technologies}
+                className="hidden md:block mt-3"
+              />
             )}
           </div>
         </div>
         {technologies && (
-          <p className="md:hidden text-sm">
-            <strong>Technologies: </strong>
-            {technologies.join(", ")}
-          </p>
+          <Technologies technologies={technologies} className="md:hidden" />
         )}
       </>
+    );
+  }
+);
+
+interface TechnologiesProps {
+  technologies: string[];
+  className?: string;
+}
+
+export const Technologies = component$(
+  ({ technologies, className }: TechnologiesProps) => {
+    const state = useContext(activeTechnologyCtx);
+
+    return (
+      <p
+        className={classNames("text-sm flex flex-wrap items-center", className)}
+      >
+        <strong className="mr-2">Technologies:</strong>
+        {technologies.map((tech) => (
+          <Chip
+            className={mutable(
+              classNames({
+                headline: state.activeTechnology === tech,
+              })
+            )}
+            onMouseEnter$={() => {
+              state.activeTechnology = tech;
+            }}
+            onMouseLeave$={() => {
+              state.activeTechnology = "";
+            }}
+          >
+            {tech}
+          </Chip>
+        ))}
+      </p>
     );
   }
 );
