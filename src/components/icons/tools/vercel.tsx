@@ -14,3 +14,15 @@ export const VercelLogo = ({ className, ariaLabel }: IconProps) => (
     />
   </svg>
 );
+
+export const VercelSmallLogo = ({ className, ariaLabel }: IconProps) => (
+  <svg
+    height="26"
+    viewBox="0 0 75 65"
+    className={className}
+    aria-label={ariaLabel}
+    fill="currentColor"
+  >
+    <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
+  </svg>
+);
