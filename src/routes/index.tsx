@@ -6,6 +6,7 @@ import {
   NextLogo,
   QwikLogo,
   ReactLogo,
+  TailwindLogo,
   TypescriptLogo,
   VercelLogo,
   VsCodeLogo,
@@ -109,6 +110,9 @@ export default component$(() => {
               </LinkWrapper>
               <LinkWrapper name="Qwik" url="https://qwik.builder.io/">
                 <QwikLogo className="w-32" ariaLabel="Qwik" />
+              </LinkWrapper>
+              <LinkWrapper name="TailwindCSS" url="https://tailwindcss.com/">
+                <TailwindLogo className="w-16" ariaLabel="TailwindCSS" />
               </LinkWrapper>
             </div>
           </Container>
