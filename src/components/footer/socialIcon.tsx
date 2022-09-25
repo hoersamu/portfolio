@@ -1,5 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { LinkWrapper } from "../linkWrapper/linkWrapper";
+import { LinkWrapper } from "../linkWrapper";
 
 export interface SocialIconProps {
   url: string;

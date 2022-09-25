@@ -10,8 +10,8 @@ import {
   VercelLogo,
   VsCodeLogo,
 } from "~/components/icons";
-import { LinkWrapper } from "~/components/linkWrapper/linkWrapper";
-import { QwikTyped } from "~/components/typed/typed";
+import { LinkWrapper } from "~/components/linkWrapper";
+import { QwikTyped } from "~/components/qwikTyped";
 import { defaultHead } from "~/util/seoHead";
 
 export default component$(() => {
@@ -32,6 +32,8 @@ export default component$(() => {
     "3D printing",
     "Sport climbing",
     "Coffee",
+    "E2E encryption",
+    "and more...",
   ];
 
   return (
