@@ -12,7 +12,7 @@ export const Footer = component$(() => {
   return (
     <footer className="flex justify-between mt-8 md:mt-20 px-4 md:px-20 py-8">
       <span>&copy; {new Date().getFullYear()} Samuel Höra</span>
-      <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
+      <div className="items-center uppercase text-xs font-bold tracking-widest hidden md:inline-flex">
         Made with
         <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
           <span title="Qwik">
