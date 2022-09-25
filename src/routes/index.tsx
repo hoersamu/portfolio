@@ -11,9 +11,29 @@ import {
   VsCodeLogo,
 } from "~/components/icons";
 import { LinkWrapper } from "~/components/linkWrapper/linkWrapper";
+import { QwikTyped } from "~/components/typed/typed";
 import { defaultHead } from "~/util/seoHead";
 
 export default component$(() => {
+  const talkAbout = [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "RESTful APIs",
+    "HTML",
+    "CSS",
+    "Qwik",
+    "Docker",
+    "VS Code",
+    "GitHub",
+    "CI/CD",
+    "Testing",
+    "Rubik's Cubes",
+    "3D printing",
+    "Sport climbing",
+    "Coffee",
+  ];
+
   return (
     <>
       <section id="home" className="h-full">
@@ -25,7 +45,20 @@ export default component$(() => {
             I am a passionate Software Engineer, specialised in front-end
             development using React and TypeScript. My main motivation is to
             build software that eases people&apos;s lives. You can talk to me
-            about .
+            about{" "}
+            <QwikTyped
+              loop
+              typeSpeed={80}
+              backSpeed={20}
+              strings={talkAbout}
+              smartBackspace
+              backDelay={1000}
+              loopCount={0}
+              showCursor
+              cursorChar="|"
+              shuffle
+            />
+            .
           </p>
           <p>
             P.S. this website is open-source and available on{" "}
