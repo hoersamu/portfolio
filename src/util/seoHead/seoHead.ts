@@ -19,7 +19,6 @@ const SeoHead = ({
   meta = [],
 }: HeadProps): DocumentHead => {
   const seoMeta: DocumentMeta[] = [
-    { name: "viewport", content: "width=device-width, initial-scale=1.0" },
     { name: "charSet", content: "utf-8" },
     { name: "description", content: description },
     { name: "author", content: author },
