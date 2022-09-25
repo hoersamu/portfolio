@@ -33,3 +33,4 @@ vite.config.ts
 postcss.config.cjs
 tailwind.config.cjs
 commitlint.config.cjs
+statistics.js

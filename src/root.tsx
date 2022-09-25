@@ -20,6 +20,16 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <RouterHead />
+        <script src="statistics.js" />
+        <noscript>
+          <p>
+            <img
+              src="https://statistics.helo-system.de/matomo.php?idsite=3&amp;rec=1"
+              style="border:0;"
+              alt=""
+            />
+          </p>
+        </noscript>
       </head>
       <body lang="en">
         <RouterOutlet />
