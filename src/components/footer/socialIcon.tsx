@@ -1,17 +1,17 @@
-import { Component, component$, Slot } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
+import { LinkWrapper } from "../linkWrapper/linkWrapper";
 
 export interface SocialIconProps {
   url: string;
   name: string;
-  icon?: Component<any>;
 }
 
 export const SocialIcon = component$(({ name, url }: SocialIconProps) => {
   return (
     <li className="w-6 h-6 opacity-70 hover:opacity-100 transition" key={name}>
-      <a href={url} target="_blank" rel="noopener noreferrer" title={name}>
+      <LinkWrapper url={url} name={name}>
         <Slot />
-      </a>
+      </LinkWrapper>
     </li>
   );
 });

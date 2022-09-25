@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 import { Container } from "~/components/container";
 import {
   DockerLogo,
@@ -10,6 +10,7 @@ import {
   VercelLogo,
   VsCodeLogo,
 } from "~/components/icons";
+import { LinkWrapper } from "~/components/linkWrapper/linkWrapper";
 import { defaultHead } from "~/util/seoHead";
 
 export default component$(() => {
@@ -47,13 +48,33 @@ export default component$(() => {
             </h2>
 
             <div className="flex flex-wrap items-center justify-center max-w-5xl mt-8 mx-auto gap-x-16 gap-y-8">
-              <NextLogo className="w-32" ariaLabel="Next.js" />
-              <VercelLogo className="w-32 md:w-36" ariaLabel="Vercel" />
-              <ReactLogo className="w-12" ariaLabel="React" />
-              <VsCodeLogo className="w-12" ariaLabel="Visual Studio Code" />
-              <DockerLogo className="w-16" ariaLabel="Docker" />
-              <TypescriptLogo className="w-16" ariaLabel="TypeScript" />
-              <QwikLogo className="w-32" ariaLabel="Qwik" />
+              <LinkWrapper name="Next.js" url="https://nextjs.org/">
+                <NextLogo className="w-32" ariaLabel="Next.js" />
+              </LinkWrapper>
+              <LinkWrapper name="Vercel" url="https://vercel.com">
+                <VercelLogo className="w-32 md:w-36" ariaLabel="Vercel" />
+              </LinkWrapper>
+              <LinkWrapper name="Ract" url="https://reactjs.org/">
+                <ReactLogo className="w-12" ariaLabel="React" />
+              </LinkWrapper>
+              <LinkWrapper
+                name="Visual Studio Code"
+                url="https://code.visualstudio.com/"
+              >
+                <VsCodeLogo className="w-12" ariaLabel="Visual Studio Code" />
+              </LinkWrapper>
+              <LinkWrapper name="Docker" url="https://www.docker.com/">
+                <DockerLogo className="w-16" ariaLabel="Docker" />
+              </LinkWrapper>
+              <LinkWrapper
+                name="TypeScript"
+                url="https://www.typescriptlang.org/"
+              >
+                <TypescriptLogo className="w-16" ariaLabel="TypeScript" />
+              </LinkWrapper>
+              <LinkWrapper name="Qwik" url="https://qwik.builder.io/">
+                <QwikLogo className="w-32" ariaLabel="Qwik" />
+              </LinkWrapper>
             </div>
           </Container>
         </section>
