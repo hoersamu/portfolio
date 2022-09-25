@@ -25,7 +25,7 @@ export const JobHeader = component$(
               {company.url ? (
                 <LinkWrapper
                   name={company.name}
-                  url={company.name}
+                  url={company.url}
                   className="underlined relative"
                 >
                   {company.name}
