@@ -44,10 +44,10 @@ export default component$(() => {
             Hey, I&apos;m Samuel Höra 👋
           </h1>
           <p className="my-8 text-lg">
-            I am a passionate Software Engineer, specialised in front-end
-            development using React and TypeScript. My main motivation is to
-            build software that eases people&apos;s lives. You can talk to me
-            about{" "}
+            I am a passionate Software Engineer from Munich, specialised in
+            front-end development using React and TypeScript. My main motivation
+            is to build software that eases people&apos;s lives. You can talk to
+            me about{" "}
             <QwikTyped
               loop
               typeSpeed={80}
