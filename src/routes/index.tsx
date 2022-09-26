@@ -71,6 +71,7 @@ export default component$(() => {
               target="_blank"
               rel="noopener noreferrer"
               className="underlined font-bold relative border-b-2 border-grey-300 dark:border-grey-700 hover:border-b-0"
+              draggable="false"
             >
               Github
             </a>

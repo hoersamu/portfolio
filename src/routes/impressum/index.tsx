@@ -26,6 +26,7 @@ export default component$(() => {
           href="mailto:contact@hoera.dev"
           target="_blank"
           className="hover:headline active:headline"
+          draggable="false"
         >
           contact@hoera.dev
         </a>

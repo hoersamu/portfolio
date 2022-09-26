@@ -5,6 +5,7 @@ export const Logo = component$(() => {
     <a
       href="/"
       className="group relative transition whitespace-nowrap hover:transition duration-300 text-2xl font-bold flex gap-4 items-center"
+      draggable="false"
     >
       <img
         alt="Image of Samuel Höra"

@@ -22,6 +22,7 @@ export const NavigationItem = component$(
             "md:underlined transition relative block whitespace-nowrap text-2xl md:text-lg"
           )}
           href={href}
+          draggable="false"
         >
           {title}
         </a>

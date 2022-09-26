@@ -19,6 +19,7 @@ export const Footer = component$(() => {
         <a
           href="/impressum"
           className="block md:inline hover:headline active:headline"
+          draggable="false"
         >
           Impressum
         </a>
