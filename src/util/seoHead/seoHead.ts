@@ -15,7 +15,7 @@ const SeoHead = ({
   description,
   author = "Samuel Höra",
   keywords,
-  image,
+  image = "/og-preview.png",
   meta = [],
 }: HeadProps): DocumentHead => {
   const seoMeta: DocumentMeta[] = [
@@ -26,18 +26,15 @@ const SeoHead = ({
     { name: "og:description", content: description },
     { name: "og:type", content: "website" },
     { name: "og:url", content: "https://hoera.dev" },
+    { name: "og:image", content: image },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: title },
     { name: "twitter:description", content: description },
     { name: "twitter:creator", content: author },
+    { name: "twitter:image", content: image },
     ...meta,
   ];
-  if (image) {
-    seoMeta.push(
-      { name: "og:image", content: image },
-      { name: "twitter:image", content: image }
-    );
-  }
+
   if (keywords) {
     seoMeta.push({ name: "keywords", content: keywords.join(", ") });
   }
