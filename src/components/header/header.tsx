@@ -32,18 +32,6 @@ export const Header = component$(() => {
   const state = useStore({ open: false, path: "" });
   const location = useLocation();
 
-  useClientEffect$(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  });
-
   useClientEffect$(({ track }) => {
     track(state, "open");
     if (state.open) document.body.style.overflow = "hidden";
