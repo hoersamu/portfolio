@@ -9,7 +9,7 @@ export const Logo = component$(() => {
       <img
         alt="Image of Samuel Höra"
         className="w-12 h-12 rounded-full"
-        src="/placeholder.jpg"
+        src="/placeholder.png"
       />
       <span className="transition duration-300 opacity-100 group-hover:opacity-0">
         @hoersamu
