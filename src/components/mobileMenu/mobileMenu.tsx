@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { navItems } from "../header";
 import { NavigationItem } from "../navigationItem";
+import { ThemeToggle } from "../themeToggle";
 
 export interface MobileMenuProps {
   isOpen: boolean;
@@ -15,7 +16,9 @@ export const MobileMenu = component$<MobileMenuProps>(({ isOpen }) => {
             {navItems.map(({ href, title }) => (
               <NavigationItem href={href} title={title} key={href} />
             ))}
-            <li className="flex justify-center mt-12"></li>
+            <li className="flex justify-center mt-12">
+              <ThemeToggle />
+            </li>
           </ul>
         </div>
       ) : null}
