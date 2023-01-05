@@ -1,83 +1,22 @@
 {
-  "name": "portfolio",
-  "description": "My portfolio website.",
-  "version": "0.0.1",
-  "author": {
-    "name": "Samuel Höra",
-    "email": "samuel@hoera.dev",
-    "url": "https://hoera.dev/"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=15.0.0"
-  },
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hoersamu/portfolio"
-  },
-  "scripts": {
-    "build": "pnpm build.types && pnpm run build.client && pnpm run build.ssg",
-    "build.client": "vite build",
-    "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.types": "tsc --incremental --noEmit",
-    "build.ssg": "vite build --ssr src/entry.static.tsx && node ./server/entry.static.js",
-    "dev": "vite --mode ssr",
-    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
-    "fmt": "prettier --write .",
-    "fmt.check": "prettier --check .",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "preview": "qwik build preview && vite preview --open",
-    "start": "vite --open --mode ssr",
-    "prepare": "husky install",
-    "prettier": "prettier --check \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css)\"",
-    "prettier:write": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css)\"",
-    "qwik": "qwik"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.19.1",
-    "@builder.io/qwik": "0.9.0",
-    "@builder.io/qwik-city": "0.0.111",
-    "@tailwindcss/typography": "^0.5.7",
-    "@types/eslint": "8.4.6",
-    "@types/node": "latest",
-    "@types/raf": "^3.4.0",
-    "@typescript-eslint/eslint-plugin": "5.37.0",
-    "@typescript-eslint/parser": "5.37.0",
-    "autoprefixer": "^10.4.12",
-    "csstype": "^3.1.1",
-    "eslint": "8.23.1",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-import-resolver-node": "0.3.6",
-    "eslint-plugin-check-file": "1.2.3",
-    "eslint-plugin-formatjs": "4.3.1",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsx-a11y": "6.6.1",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-qwik": "0.9.0",
-    "eslint-plugin-simple-import-sort": "8.0.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
-    "node-fetch": "3.2.10",
-    "postcss": "^8.4.16",
-    "prettier": "2.7.1",
-    "tailwindcss": "3.1.8",
-    "typescript": "4.8.3",
-    "vite": "3.1.1",
-    "vite-tsconfig-paths": "3.5.0"
-  },
-  "lint-staged": {
-    "./*/**/*.{js,jsx,ts,tsx}": [
-      "pnpm run prettier:fix",
-      "pnpm run eslint:fix"
-    ],
-    "*.{json,md}": [
-      "pnpm run prettier:fix"
-    ]
-  },
-  "dependencies": {
-    "classnames": "^2.3.2",
-    "raf": "^3.4.1",
-    "typed.js": "^2.0.12"
-  }
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@types/headroom": "0.12.1",
+		"nuxt": "3.0.0"
+	},
+	"dependencies": {
+		"@nuxtjs/svg-sprite": "github:Botz/svg-sprite-module#nuxt3",
+		"@nuxtjs/tailwindcss": "6.2.0",
+		"@storyblok/nuxt": "4.6.0",
+		"@tailwindcss/typography": "0.5.8",
+		"axios": "0.27.2",
+		"headroom.js": "0.12.0"
+	}
 }
