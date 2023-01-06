@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@nuxtjs/color-mode': 3.2.0
   '@nuxtjs/svg-sprite': github:Botz/svg-sprite-module#nuxt3
   '@nuxtjs/tailwindcss': 6.2.0
   '@storyblok/nuxt': 4.6.0
@@ -9,6 +10,7 @@ specifiers:
   axios: 0.27.2
   headroom.js: 0.12.0
   nuxt: 3.0.0
+  typed.js: 2.0.12
 
 dependencies:
   '@nuxtjs/svg-sprite': github.com/Botz/svg-sprite-module/62817424982468500c6f93b35bcc84f7257019be
@@ -17,8 +19,10 @@ dependencies:
   '@tailwindcss/typography': 0.5.8
   axios: 0.27.2
   headroom.js: 0.12.0
+  typed.js: 2.0.12
 
 devDependencies:
+  '@nuxtjs/color-mode': 3.2.0
   '@types/headroom': 0.12.1
   nuxt: 3.0.0
 
@@ -643,6 +647,17 @@ packages:
       - typescript
       - vls
       - vti
+    dev: true
+
+  /@nuxtjs/color-mode/3.2.0:
+    resolution: {integrity: sha512-isDR01yfadopiHQ/VEVUpyNSPrk5PCjUHS4t1qYRZwuRGefU4s9Iaxf6H9nmr1QFzoMgTm+3T0r/54jLwtpZbA==}
+    dependencies:
+      '@nuxt/kit': 3.0.0
+      lodash.template: 4.5.0
+      pathe: 1.0.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@nuxtjs/tailwindcss/6.2.0:
@@ -4864,6 +4879,10 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: false
+
+  /typed.js/2.0.12:
+    resolution: {integrity: sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==}
     dev: false
 
   /ufo/0.8.6:

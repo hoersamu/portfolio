@@ -7,7 +7,7 @@ export default <Partial<Config>>{
 		"components/**/*.{vue,js}",
 		"pages/**/*.vue",
 	],
-	arkMode: "class",
+	darkMode: "class",
 	theme: {
 		extend: {
 			colors: {

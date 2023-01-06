@@ -30,7 +30,6 @@ defineProps({ blok: Object });
 const open = ref(false);
 
 const onBurgerClick = () => {
-	console.log(open.value);
 	open.value = !open.value;
 };
 

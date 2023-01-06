@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 		["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_ACCESS_TOKEN }],
 		"@nuxtjs/tailwindcss",
 		"@nuxtjs/svg-sprite",
+		["@nuxtjs/color-mode", { classSuffix: "" }],
 	],
 
 	runtimeConfig: {
