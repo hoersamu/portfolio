@@ -11,7 +11,7 @@
 <script setup lang="ts">
 const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get("cdn/stories/config", {
-	version: "draft",
+	version: useStoryblokVersion(),
 	resolve_links: "url",
 });
 

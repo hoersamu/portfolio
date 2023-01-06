@@ -6,7 +6,7 @@ const resolveRelations = ["popular-articles.articles"];
 const story = await useAsyncStoryblok(
 	slug ? slug.join("/") : "home",
 	{
-		version: "draft",
+		version: useStoryblokVersion(),
 		resolve_relations: resolveRelations,
 	},
 	{

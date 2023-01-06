@@ -5,4 +5,10 @@ export default defineNuxtConfig({
 		"@nuxtjs/tailwindcss",
 		"@nuxtjs/svg-sprite",
 	],
+
+	runtimeConfig: {
+		public: {
+			storyblokDraft: process.env.STORYBLOK_USE_DRAFT === "true" ? true : false,
+		},
+	},
 });
