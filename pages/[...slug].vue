@@ -8,5 +8,4 @@ const { slug } = useRoute().params;
 const story = await useAsyncStoryblok(slug ? slug.join("/") : "home", {
 	version: useStoryblokVersion(),
 });
-console.log("story", story);
 </script>
