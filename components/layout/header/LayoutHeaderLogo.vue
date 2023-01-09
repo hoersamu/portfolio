@@ -7,7 +7,7 @@
 			:src="blok.picture.filename + '/m/96x0'"
 			:alt="blok.picture.alt"
 			:title="blok.picture.title"
-			className="w-12 h-12 rounded-full"
+			class="w-12 h-12 rounded-full"
 		/>
 		<span class="transition duration-300 opacity-100 group-hover:opacity-0">
 			{{ blok.nickname }}

@@ -19,7 +19,9 @@
 				>
 					<LayoutHeaderBurgerIcon :is-open="open" />
 				</button>
-				<div className="hidden md:block"></div>
+				<div class="hidden md:block">
+					<LayoutHeaderThemeToggle />
+				</div>
 			</div>
 		</header>
 	</Headroom>
@@ -27,6 +29,8 @@
 </template>
 
 <script setup>
+import LayoutHeaderThemeToggle from "./LayoutHeaderThemeToggle.vue";
+
 defineProps({ blok: Object });
 
 const open = ref(false);

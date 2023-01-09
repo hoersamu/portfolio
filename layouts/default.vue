@@ -1,7 +1,7 @@
 <template>
 	<main class="min-h-screen flex flex-col">
 		<LayoutHeader v-if="header" :blok="header" />
-		<div class="flex-1 mx-auto w-full md:max-w-5xl" id="content">
+		<div class="flex-1 mx-auto w-full md:max-w-5xl px-4" id="content">
 			<slot />
 		</div>
 		<LayoutFooter v-if="footer" :blok="footer" />

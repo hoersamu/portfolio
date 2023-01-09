@@ -10,7 +10,9 @@
 				:key="link._uid"
 				:blok="link"
 			/>
-			<li class="flex justify-center mt-12"></li>
+			<li class="flex justify-center mt-12">
+				<LayoutHeaderThemeToggle />
+			</li>
 		</ul>
 	</div>
 </template>
