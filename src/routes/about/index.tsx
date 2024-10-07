@@ -19,7 +19,7 @@ export default component$(() => {
           make the internet a better place.
         </p>
         <p className="my-4">
-          I am 21 years old and have been a developer for as long as I can
+          I am 23 years old and have been a developer for as long as I can
           think. The technologies I work with are TypeScript, HTML and CSS with
           a focus on the frameworks React.js, Next.js, Node and Express. I
           strive to build software that makes people's life easier instead of
